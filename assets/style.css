@@ -1,0 +1,186 @@
+* {
+    font-family: monospace;
+    
+}
+.solidblock {
+    background-color: #ffdd00;
+    padding: 5px;
+}
+.solidblock2 {
+    background-color: rgb(255, 237, 156);
+    padding: 5px;
+}
+
+body {
+    background-color: rgb(211, 211, 211);
+}
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+header h1 {
+    font-size: 46px;
+    text-align: center;
+    width: 375px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+header ul {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 375px;
+    margin-bottom: 10px;
+}
+
+header li {
+    height: 25px;
+    color: white;
+    justify-content: space-evenly;
+}
+/* end of header */
+.hero {
+    display: flex;
+    margin-top: 2%;
+    height: 300px;
+    margin-left: 4%;
+    margin-right: 4%;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px black;
+}
+
+.hero h1 {
+    color: black;
+    font-size: 100px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: black;
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.hero h3 {
+    color: black;
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#webdev, #nameid {
+    color: gray;
+    font-size: 25px;
+}
+/* about me */
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    box-shadow: 10px 10px black;
+    background-color: darkgray;
+
+}
+
+.aboutme h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 4%;
+}
+
+.aboutme h2 {
+    font-size: 24px;
+    color: black;
+    margin: 6%;
+}
+/* end of about me */
+
+/* projects section */
+.projects > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.projects h1 {
+    margin-top: 2%;
+    margin-bottom: 8%;
+    font-size: 60px;
+}
+.projects ul {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.projects li {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 24px;
+}
+.projects img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.projects p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.form > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}    
+
+.form h2 {
+    padding: 4%;
+    font-size: 40px;
+    font-family: serif;
+}
+
+.form {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.form input {
+    margin: auto;
+    display: block;
+    width: 200px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    
+    
+    /*  */
+    .aboutme {margin-left:20%}
+    .aboutme {margin-right:20%}
+    .aboutme h2 {font-size: 30px;}
+}
