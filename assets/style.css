@@ -1,7 +1,11 @@
 * {
     font-family: monospace;
-    
 }
+body {
+    background-color: rgb(211, 211, 211);
+}
+
+/* code for colored bars */
 .solidblock {
     background-color: #ffdd00;
     padding: 5px;
@@ -10,10 +14,9 @@
     background-color: rgb(255, 237, 156);
     padding: 5px;
 }
+/* --- */
 
-body {
-    background-color: rgb(211, 211, 211);
-}
+
 /* header */
 header {
     display: flex;
@@ -23,7 +26,6 @@ header {
     color: white;
     font-size: 16px;
 }
-
 header h1 {
     font-size: 46px;
     text-align: center;
@@ -32,20 +34,21 @@ header h1 {
     margin-bottom: 25px;
     color: white;
 }
-
 header ul {
     display: inline-flex;
     justify-content: space-evenly;
     width: 375px;
     margin-bottom: 10px;
 }
-
 header li {
     height: 25px;
     color: white;
     justify-content: space-evenly;
 }
 /* end of header */
+
+
+/* hero with responsive design */
 .hero {
     display: flex;
     margin-top: 2%;
@@ -56,131 +59,138 @@ header li {
     background-color: white;
     box-shadow: 10px 10px black;
 }
-
 .hero h1 {
     color: black;
     font-size: 100px;
     margin-top: 25px;
     text-align: center;
 }
-
 .hero h2 {
     color: black;
     font-size: 25px;
     margin-top: 25px;
     text-align: center;
 }
-
 .hero h3 {
     color: black;
     font-size: 25px;
     margin-top: 25px;
     text-align: center;
 }
-
+/* --- */
+/* highlighting name and role */
 #webdev, #nameid {
     color: gray;
     font-size: 25px;
 }
-/* about me */
-.aboutme {
+/* -- */
+
+
+/* about me with responsive design*/
+#aboutme {
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 4%;
-    margin-bottom: 4%;
     box-shadow: 10px 10px black;
     background-color: darkgray;
-
+    margin-left: 4%;
+    margin-right: 4%;
 }
-
-.aboutme h1 {
+#aboutme h1 {
     font-size: 50px;
     text-align: center;
     margin: 4%;
 }
-
-.aboutme h2 {
+#aboutme h2 {
     font-size: 24px;
     color: black;
     margin: 6%;
 }
-/* end of about me */
+/* --- */
 
-/* projects section */
-.projects > * {
+
+/* projects section completely centered */
+#projects > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.projects h1 {
+#projects h1 {
     margin-top: 2%;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
     font-size: 60px;
 }
-.projects ul {
+#projects ul {
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.projects li {
+#projects li {
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 24px;
 }
-.projects img {
+#projects img {
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.projects p {
+#projects p {
     margin-top: 2px;
     margin-bottom: 2px;
 }
+/* --- */
 
-.form > * {
+/* form using 100% width. inputs are responsive */
+#form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 10px;
-}    
-
-.form h2 {
-    padding: 4%;
-    font-size: 40px;
-    font-family: serif;
-}
-
-.form {
     background-color: black;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+#form h2 {
     color: white;
-    padding-bottom: 10px;
+    font-size: 50px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+#form input {
+    margin-bottom: 4%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* --- */
 
-.form input {
-    margin: auto;
-    display: block;
-    width: 200px;
-    margin-bottom: 20px;
-    height: 40px;
-}
 
 footer {
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     color: white;
-    font-size: 12px;
-    text-align: center;
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 5px;
 }
 
+/* adapted from mobile to desktop. could be cleaner ( */
 @media screen and (min-width: 768px){
+    header ul {width: 800px;}
+    header ul {font-size: 24px;}
+
+    .hero {margin-left: 20%;}
+    .hero {margin-right: 20%;}
     
+    #aboutme {margin-left:20%;}
+    #aboutme {margin-right:20%;}
+    #aboutme h2 {font-size:30px;}
+    #aboutme h1 {font-size:90px;}
     
-    /*  */
-    .aboutme {margin-left:20%}
-    .aboutme {margin-right:20%}
-    .aboutme h2 {font-size: 30px;}
+    #projects {font-size: 24px;}
+    #projects li {font-size: 50px;}
+    #projects p {margin-bottom: 4%;}
+    
+    #form input {height: 40px;}
 }
